@@ -29,11 +29,12 @@ Wejściowe parametry sieci
 Weryfikacja połączenia
 
 Polecenie
-```
+```PC1: ping 192.168.10.11
+   PC2: ping 192.168.10.10
 ```
 
 Efekt
-```
+```spokojnie sobie działa, nie ma straconych pakietów
 ```
 
 Statyczna konfiguracja parametrów połączenia
@@ -49,17 +50,24 @@ Wejściowe parametry sieci
 | IP - address  | 192.168.10.11 | |
 | MASKA  | 255.255.255.0 | |
 | PC 2  |  | |
-| IP - address  | 172.16.100.100 | |
+| IP - address  | 175.15.205.205 | |
 | MASKA  | 255.255.255.0 | |
 
 Weryfikacja połączenia
 
 Polecenie
-```
+```PC1: ping 175.15.205.205
+   PC1: ping 192.168.10.11
+   PC2: ping 192.168.10.10
+   połączenie client-server-chat z local storage:
+   ~#ls
+   ~#python3 client-server-chat/server.py  -- na PC1
+   ~#python3 client-server-chat/client.py  192.168.10.10 5555 -- na PC2, podłączenie do servera port:5555(dowolny)
 ```
 
 Efekt
-```
+```przy ping 175.15.205.205 nie będzie miało efektu, bo nie mamy połączenia z takim portem w PC1, 
+   ostatnie operacje działają bez zarzutu
 ```
 
 Nowa statyczna konfiguracja 
@@ -87,7 +95,7 @@ Efekt
 
 ### Utrwalenie konfiguracji
 
-Dlaczego? Jak? Co? :)
+Utrwalenie konfiguracji sieci poprzez wpisywanie w /etc/network/interfaces dla danych adapterów adresu oraz maski(address *.*.*.*; netmask 255.255.255.0) dla tego, żeby za każdym właczeniem maszyny nie potrzebowaliśmy stracenia czasu na dodawanie łączących ip adresów do adapteru
 
 ### Warto wiedzieć
 
@@ -95,9 +103,9 @@ Dlaczego? Jak? Co? :)
 | Parametr | wartość | komentarz(opcionalny) |
 | ------------- |:-------------:| -----:|
 | Lokalizacja pliku z konfiguracją sieci| | |
-| UP -> Wyłączenie interfejsu sieciowego| | |
-| DOWN -> Włączenie interfejsu sieciowego| | |
+| UP -> Wyłączenie interfejsu sieciowego| ip link set eth1 up|eth1 - adapter sieciowy |
+| DOWN -> Włączenie interfejsu sieciowego| ip link set eth1 down| |
 | Sprawdzenie obecnych parametrów | | |
-| lista wszystkich interfejsów | | |
-| Które interfejsy jakie porty słuchają | | |
+| lista wszystkich interfejsów |netstat | |
+| Które interfejsy jakie porty słuchają |netstat -ltpn | |
 
