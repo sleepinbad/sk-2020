@@ -29,12 +29,14 @@ Wejściowe parametry sieci
 Weryfikacja połączenia
 
 Polecenie
-``` PC1: ping 192.168.10.11
-    PC2: ping 192.168.10.10
+```  
+      PC1: ping 192.168.10.11
+      PC2: ping 192.168.10.10
 ```
 
 Efekt
-```    spokojnie sobie działa, nie ma straconych pakietów
+```
+     spokojnie sobie działa, nie ma straconych pakietów
 ```
 
 Statyczna konfiguracja parametrów połączenia
@@ -66,9 +68,9 @@ Polecenie
 ```
 
 Efekt
-    Przy ping 175.15.205.205 nie będzie miało efektu, bo nie mamy połączenia z takim portem w PC1, 
+``` Przy ping 175.15.205.205 nie będzie miało efektu, bo nie mamy połączenia z takim portem w PC1, 
     ostatnie operacje działają bez zarzutu
-
+```
 Nowa statyczna konfiguracja 
 
 -------------------------
