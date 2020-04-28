@@ -37,7 +37,7 @@ Polecenie
 
 Efekt
 ```
-     spokojnie sobie działa, nie ma straconych pakietów
+     Spokojnie sobie działa, nie ma straconych pakietów
      
 ```
 
@@ -94,10 +94,20 @@ Weryfikacja połączenia
 
 Polecenie
 ```
+      vi /etc/network/interfaces
+      auto eth1
+      iface eth1 inet dhcp --> static
+      -->   address 192.168.10.10
+      -->   netmask 255.255.255.0
+      esc - : - wq                  - wychodzi i zachowuje zmiany
+      rc-service networking restart  - restartuje sieć maszyny
+      
 ```
 
 Efekt
 ```
+      Nie ma potrzeby ustawiać porty dla połaczenia server-client
+
 ```
 
 ### Utrwalenie konfiguracji
