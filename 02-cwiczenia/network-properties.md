@@ -32,11 +32,13 @@ Polecenie
 ```  
       PC1: ping 192.168.10.11
       PC2: ping 192.168.10.10
+      
 ```
 
 Efekt
 ```
      spokojnie sobie działa, nie ma straconych pakietów
+     
 ```
 
 Statyczna konfiguracja parametrów połączenia
@@ -58,18 +60,22 @@ Wejściowe parametry sieci
 Weryfikacja połączenia
 
 Polecenie
-```PC1: ping 175.15.205.205
+```
+   PC1: ping 175.15.205.205
    PC1: ping 192.168.10.11
    PC2: ping 192.168.10.10
    połączenie client-server-chat z local storage:
    ls-sprawdzamy najawność client-server-chat
    python3 client-server-chat/server.py  -- na PC1
    python3 client-server-chat/client.py  192.168.10.10 5555 -- na PC2, podłączenie do servera port:5555(dowolny)
+   
 ```
 
 Efekt
-``` Przy ping 175.15.205.205 nie będzie miało efektu, bo nie mamy połączenia z takim portem w PC1, 
+``` 
+    Przy ping 175.15.205.205 nie będzie miało efektu, bo nie mamy połączenia z takim portem w PC1, 
     ostatnie operacje działają bez zarzutu
+    
 ```
 Nowa statyczna konfiguracja 
 
