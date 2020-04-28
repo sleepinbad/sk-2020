@@ -34,7 +34,7 @@ Polecenie
 ```
 
 Efekt
-``` spokojnie sobie działa, nie ma straconych pakietów
+```    spokojnie sobie działa, nie ma straconych pakietów
 ```
 
 Statyczna konfiguracja parametrów połączenia
@@ -66,9 +66,8 @@ Polecenie
 ```
 
 Efekt
-```  Przy ping 175.15.205.205 nie będzie miało efektu, bo nie mamy połączenia z takim portem w PC1, 
-     ostatnie operacje działają bez zarzutu
-```
+    Przy ping 175.15.205.205 nie będzie miało efektu, bo nie mamy połączenia z takim portem w PC1, 
+    ostatnie operacje działają bez zarzutu
 
 Nowa statyczna konfiguracja 
 
