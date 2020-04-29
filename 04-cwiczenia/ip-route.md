@@ -1,6 +1,5 @@
 ## Konfiguracja route
 
-
 * routing
     * dodaj trasę default
     * dodaj trasę przez bramę
@@ -10,11 +9,12 @@
     * pobierz trasę dla adresu
      
 ### ip 
-| subcommand    |  polecenie   | opis  |
-| ------------- |:-------------| :---------------| 
-|   ``route``   |  ip route add default via 192.168.1.1| |
-|    route      |  ip route add 192.168.1.0/24 via 192.168.1.1| |
-
+| subcommand     |  polecenie                                  | opis                                    |
+| -------------  |:-------------                               | :---------------                        | 
+|   ``route``    |  ip route add default via 192.168.1.1       |                                         |
+|    route       |  ip route add 192.168.1.0/24 via 192.168.1.1|                                         |
+| ipv4.ip_forward| /etc/sys/net/ipv4/ip_forward                |                                         |
+|dop|sysctl net.ipv4.ip_forward=1|default=0, zmieniamy w routerze dla połączenia urządzeń z różnych sieci|
 
 ### Zastosowania
 
