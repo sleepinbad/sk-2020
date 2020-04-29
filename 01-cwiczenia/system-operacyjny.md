@@ -30,6 +30,10 @@
    https://www.netacad.com/courses/packet-tracer
 
 4. Dlaczego umiejętnosci z zakresu sieci komputerowych mogą mi się przydać? :)
+  ```
+    Umiejętności z tego zakresu dadzą większe zrozumienie czym zajmują się informatycy oraz są jednym z moich kroków w świat technologii. 
+  
+  ```
 
 
 ### Charakterystyka systemu operacyjnego
