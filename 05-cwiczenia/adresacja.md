@@ -88,7 +88,7 @@ Maska -> 255.255.255.11100000 -> 255.255.255.224 -> /27
 | ``192.168.1.0/29``   | | 
 | ``192.168.1.0/31``   | | 
 
-* liczba 0 w masce?
+* liczba 0 w masce? ``hostów - 4 294 967 296``
 
 
 ## Parametry na podstawie adresu
