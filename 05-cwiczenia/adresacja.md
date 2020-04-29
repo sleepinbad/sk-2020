@@ -9,15 +9,15 @@
 ### Jak policzyć?
 #### Adres sieci
 
-1. 
-2.
-3.
+1. Zamieniamy dziesiętną postać Adresu ip na binarną
+2. Zamieniamy dziesiętną postać Maski na binarną
+3. Mnożymy binarny Adres ip na binarną Maskę
 
 #### Adres rozgłoszeniowy
 
-1. 
-2.
-3.
+1. Odwracamy binarną postać Maski
+2. Przekształcamy rezultat na dziesiętną postać
+3. Bitowy operator OR dla Adresu sieci oraz dziesiętnej odwruconej postaci Maski
 
 
 ## Podział na równą ilość podsieci
